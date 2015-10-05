@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block css %}
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstrap-responsive.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstrap-responsive.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/login.css' %}" rel="stylesheet">
+		
+ {% endblock css %}
+
+{% block content %}
+    <div class="container">
+     {% if error_message %}
+            <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_message }}</div>
+          {% endif %}
+
+      <form action="" class="form-signin" method="post"> {% csrf_token %}
+        <h2 class="form-signin-heading">Login - Área restrita</h2>
+        <label for="inputEmail" class="sr-only">Usuário</label>
+        <input name='usuario' id="inputEmail" class="form-control" placeholder="Usuário" required="" autofocus="" type="text">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input name='pass' id="inputPassword" class="form-control" placeholder="Senha" required="" type="password">
+        
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+      </form>
+
+    </div> <!-- /container -->
+    
+    <script src="{% static 'js/login.js' %}"></script>
+{% endblock content %}
+    
