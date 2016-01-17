@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     url(r'^ingrediente/', include('ingrediente.urls')),
     url(r'^item/', include('item.urls')),
     url(r'^acesso/', include('acesso.urls')),
-    url(r'^$', index, name='index'),
+    url(r'^', include ('cardapio.urls')),
     
     
 

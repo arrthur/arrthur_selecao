@@ -13,9 +13,10 @@
   
  <div class="container">
     <div class="panel panel-padrao">
+    <div class="col-md-6 col-md-offset-3">
         <div class="panel-heading clearfix">
             
-            <h3 class="panel-title text-center">{% if instance %}Alterar Categoria{% else %}Adicionar Categoria{% endif %}</h3>
+            <h3 class="panel-title text-center">{% if instance %}Alterar Ingrediente{% else %}Adicionar Ingrediente{% endif %}</h3>
         </div>
         
    	<form class="form-horizontal" role="form" method="post">
@@ -28,7 +29,7 @@
 		{% endif %}
 		</div>
  	
-  		<div class="form-group">
+  		<div class="form-group text-right">
 	    	<div class="col-sm-offset-2 col-sm-10">
 	      	<button type="submit" class="btn btn-default">{% if instance %} Editar {% else %}Cadastrar{% endif %}</button>
 	    	</div>
@@ -37,7 +38,7 @@
  	</form>
  	
   	</div>
-  
+  </div>
 
  </div>
 

@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+FAVICON_PATH = '/static/assets_easy_dr/img/favicon.png'
 # Application definition
 
 INSTALLED_APPS = (
@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'item',
     'rest_framework',
     'acesso',
+    'cardapio',
   
     )
 
@@ -96,7 +97,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-BR'
 
 TIME_ZONE = 'UTC'
 

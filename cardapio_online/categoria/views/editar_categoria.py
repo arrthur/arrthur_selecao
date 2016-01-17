@@ -19,7 +19,11 @@ def editar_categoria(request, id_categoria=None):
         
         if form.is_valid():
             form.save()
-            messages.success(request, "Adicionado com sucesso")
+            if instance:
+                messages.success(request, "Editado com sucesso")
+            else:
+                messages.success(request, "Adicionado com sucesso")
+            
             return redirect('listar_categoria')
     
     else:

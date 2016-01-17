@@ -18,12 +18,16 @@ def login(request):
     
         else:
             error_message = 'Usuário ou senha incorreto(s).'
+            
+            
 
 
 
     return render_to_response('login1.html', locals(), 
                               context_instance=RequestContext(request))
-    
+
 def index_acesso(request):
     return render_to_response('index_acesso.html', locals(), 
                               context_instance=RequestContext(request))
+                              
+                            

@@ -33,10 +33,30 @@
         <li><a href="{% url 'listar_item_acesso' %}">Itens</a></li>
         <li><a href="{% url 'listar_categoria' %}">Categorias</a></li>
         <li><a href="{% url 'listar_ingrediente' %}">Ingredientes</a></li>
+		<li class="divider"></li>
+		 
+
       </ul>
+      <ui class='nav navbar-nav navbar-right'>
+    	<li><a href="{% url 'logout_acesso' %}"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Sair</a></li>
+    	</ui>
+    
+     
     </div><!--/.nav-collapse -->
+    
   </div>
 </div>
+{% if messages %}
+<div class="alert alert-success alert-dismissable">
+
+<ul>
+    {% for message in messages %}
+    <div class='text-center'><li>{{ message }}</li></div>
+    {% endfor %}
+</ul>
+{% endif %}
+</div>
+
 
  {% block content %}
   {% endblock content %}

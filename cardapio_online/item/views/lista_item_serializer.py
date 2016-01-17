@@ -10,7 +10,6 @@ class Lista_item_serializer(generics.ListAPIView):
     
     
 class Criar_item_serializer(generics.CreateAPIView):
-    queryset = Item.objects.all()
     serializer_class = ItemSerializer
     
         

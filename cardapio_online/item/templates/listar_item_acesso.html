@@ -65,8 +65,13 @@
 		                            <td align="left">
 		                                 <a class="link" href="{% url 'editar_item' item.id %}"><span><b>{{item.id}}</b></span></a>
 		                            </td>
-	                            <td>{{item.nome}}</td>
-	                            <td><a href="{% url 'ItemSerial' item.id %}" class="btn btn-default btn-sm  pull-left">API REST</a></td>
+	                            <td align='center'>{{item.nome}}</td>
+	                            <td align='right'><a href="{% url 'ItemSerial' item.id %}" class="btn btn-default btn-sm  pull-left">API REST</a>&nbsp;&nbsp;
+	                            
+								<a href="{% url 'remover_item' item.id %}" class="btn btn-danger  pull-center" onclick="return confirm('Você tem certeza?')">DELETAR</a>	                            
+	                            </td>
+	                           
+	                            
 	                           
 	                        </tr>
 	                        {% endfor %}

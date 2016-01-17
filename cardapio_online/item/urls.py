@@ -4,6 +4,7 @@ from item.views.lista_item_serializer import Lista_item_serializer,\
     Criar_item_serializer
 from item.views.editar_item import editar_item
 from item.views.item_serializer import ItemSerial
+from item.views.remover_item import remover_item
 
 
 
@@ -17,5 +18,6 @@ urlpatterns = patterns('',
      
      url(r'^add_item/$',          editar_item,          name='adicionar_item'),
      url(r'^editar_item/(?P<id_item>\d+)$', editar_item, name='editar_item'),
+     url(r'^remover_item/(?P<id_item>\d+)$', remover_item, name='remover_item')
 
 )
