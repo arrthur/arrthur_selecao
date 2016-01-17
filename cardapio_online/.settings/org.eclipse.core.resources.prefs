@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//acesso/templates/index_acesso.html=UTF-8
+encoding//acesso/templates/login1.html=UTF-8
 encoding//acesso/views/login.py=utf-8
 encoding//categoria/forms/categoria_form.py=utf-8
 encoding//categoria/models/categoria.py=utf-8
@@ -13,9 +15,7 @@ encoding//item/models/item.py=utf-8
 encoding//item/views/editar_item.py=utf-8
 encoding//item/views/lista_item.py=utf-8
 encoding//templates/index.html=UTF-8
-encoding//templates/index_acesso.html=UTF-8
 encoding//templates/lista_item.html=UTF-8
 encoding//templates/listar_categoria.html=UTF-8
 encoding//templates/listar_ingrediente.html=UTF-8
 encoding//templates/listar_item_acesso.html=UTF-8
-encoding//templates/login1.html=UTF-8
