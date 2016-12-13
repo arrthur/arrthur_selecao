@@ -6,7 +6,6 @@
 <link href="{% static 'css/bootstrap-responsive.css' %}" rel="stylesheet">
 <link href="{% static 'css/bootstrap-responsive.min.css' %}" rel="stylesheet">
 <link href="{% static 'css/login.css' %}" rel="stylesheet">
-		
  {% endblock css %}
 
 {% block content %}
@@ -16,13 +15,13 @@
           {% endif %}
 
       <form action="" class="form-signin" method="post"> {% csrf_token %}
-        <h2 class="form-signin-heading">Login - Área restrita</h2>
-        <label for="inputEmail" class="sr-only">Usuário</label>
-        <input name='usuario' id="inputEmail" class="form-control" placeholder="Usuário" required="" autofocus="" type="text">
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input name='pass' id="inputPassword" class="form-control" placeholder="Senha" required="" type="password">
-        
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+	        <h2 class="form-signin-heading">Login - Área restrita</h2>
+	        <label for="inputEmail" class="sr-only">Usuário</label>
+	        <input name='usuario' id="inputEmail" class="form-control" placeholder="Usuário" required="" autofocus="" type="text">
+	        <label for="inputPassword" class="sr-only">Password</label>
+	        <input name='pass' id="inputPassword" class="form-control" placeholder="Senha" required="" type="password">
+	        
+	        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
       </form>
 
     </div> <!-- /container -->
